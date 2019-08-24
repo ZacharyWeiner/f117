@@ -5,7 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    https://f117.s3-us-west-2.amazonaws.com/assets/
 
         <meta name="description" content="A continual stream of video to flood your most important channels" />
         <meta name="keywords" content="Video, Social, Production, engagement, leadership" />
@@ -26,7 +25,9 @@
      <!--Load JavaScript-->
 
   </body>
+
    <script src="https://f117.s3-us-west-2.amazonaws.com/assets/js/jquery.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js'></script>
         <script src="https://f117.s3-us-west-2.amazonaws.com/assets/js/jquery.sticky.js"></script>
         <script src='https://f117.s3-us-west-2.amazonaws.com/assets/js/imagesloaded.pkgd.js'></script>
         <script src='https://f117.s3-us-west-2.amazonaws.com/assets/js/jquery.fitvids.js'></script>
@@ -36,6 +37,15 @@
         <script src='https://f117.s3-us-west-2.amazonaws.com/assets/js/jquery.prettyPhoto.js'></script>
         <script src='https://f117.s3-us-west-2.amazonaws.com/assets/js/owl.carousel.min.js'></script>
         <script src='https://f117.s3-us-west-2.amazonaws.com/assets/js/main.js'></script>
+        <script>
+          var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            startDelay: 1000,
+            typeSpeed:50,
+            backSpeed:50,
+            loop: true
+          });
+        </script>
 </html>
 
 
