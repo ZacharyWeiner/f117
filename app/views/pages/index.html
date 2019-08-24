@@ -1,11 +1,90 @@
 
-<style type="text/css"> .section .page-desc{ font-size: 18px; line-height: 24px;padding-left: 5px;}</style>
+<style type="text/css"> .section .page-desc{ font-size: 18px; line-height: 24px;padding-left: 5px;}
 
-<strong>
 
-    .section .page-desc
-    font 18 line height 24
-</strong>
+.pricing-plan-list {
+  display: flex;
+}
+
+.pricing-plan {
+  position: relative;
+  width: 260px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(67, 74, 84, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.pricing-plan:first-child .pricing-plan__price {
+  color: #65c163;
+}
+.pricing-plan:first-child:before {
+  background-image: linear-gradient(90deg, #bede2f 0%, #30c85f 100%);
+}
+.pricing-plan:nth-child(2) .pricing-plan__price {
+  color: #31a3d2;
+}
+.pricing-plan:nth-child(2):before {
+  background-image: linear-gradient(90deg, #29c4cf 0%, #3a7bd5 100%);
+}
+.pricing-plan:last-child .pricing-plan__price {
+  color: #794eb1;
+}
+.pricing-plan:last-child:before {
+  background-image: linear-gradient(90deg, #3e6dcc 0%, #9014e8 100%);
+}
+.pricing-plan:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+}
+
+.pricing-plan--featured {
+  z-index: 1;
+  width: 330px;
+  margin: -30px -20px;
+  box-shadow: 0px 8px 25px 0px rgba(67, 74, 84, 0.16);
+}
+.pricing-plan--featured .pricing-plan__name {
+  margin-top: 30px;
+}
+
+.pricing-plan__name,
+.pricing-plan__price {
+  font-weight: 200;
+}
+
+.pricing-plan__name {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.pricing-plan__price {
+  font-size: 60px;
+  margin: 0 0 5px 0;
+}
+
+.pricing-plan__disclosure {
+  font-size: 12px;
+  color: #a1a5aa;
+}
+
+.pricing-plan__feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  margin-top: 25px;
+  line-height: 2.5;
+  color: #656d78;
+}
+</style>
+
         <div class="site-wrapper">
 
             <div class="doc-loader">
@@ -90,7 +169,9 @@
                                 We Craft Awesome <br>
                                 Videos For:<br>
                                 <div id="typed-strings">
-                                    <p>Social</p>
+                                    <p>Facebook</p>
+                                    <p>Instagram</p>
+                                    <p>YouTube</p>
                                     <p>Announcements</p>
                                     <p>Promotions</p>
                                     <p>Marketing</p>
@@ -271,7 +352,7 @@
                                     </p>
                                 </div>
                                 <div class="one_half last">
-                                    <img src="https://f117.s3-us-west-2.amazonaws.com/assets/images/about_img.png" alt="">
+                                    <!-- <img src="https://f117.s3-us-west-2.amazonaws.com/assets/images/about_img.png" alt=""> -->
                                 </div>
                                 <div class="clear"></div>
                             </div>
@@ -402,7 +483,7 @@
                                     </p>
                                 </div>
                                 <div class="one_half last">
-                                    <img src="https://f117.s3-us-west-2.amazonaws.com/assets/images/about_img.png" alt="">
+                                    <!-- <img src="https://f117.s3-us-west-2.amazonaws.com/assets/images/about_img.png" alt=""> -->
                                 </div>
                                 <div class="clear"></div>
                             </div>
@@ -535,26 +616,32 @@
                                 </span>
                             </div>
                             <h2 class="entry-title">
-                                About
+                                How It Works
                             </h2>
                             <p class="page-desc">
-                                Permanence of the stars hundreds of thousands
+                                This is the easiest way to get publish-redy videos delivered to your inbox that your audience will love.
                             </p>
                         </div>
                         <div class="section-content-holder float-left">
                             <div class="content-wrapper">
 
                                 <div class="three_fourth last">
-                                    <p class="medium-text ">Two ghostly white <br> figures in coveralls.</p><br>
+                                    <p class="medium-text ">As Easy As <br>1-2-3</p><br>
                                 </div>
                                 <div class="clear"></div>
 
                                 <div class="one_half">
                                     <p>
-                                        <strong class="color-black">As a patch of light. Euclid cosmic fugue a very small stage in a vast cosmic arena brain is the seed of intelligence billions upon billions.</strong>
+                                        <strong class="color-black">Just shoot and upload. We'll do the rest.</strong>
                                     </p>
                                     <p>
-                                        Flatland! A very small stage in a vast cosmic arena great turbulent clouds encyclopaedia galactica star stuff harvesting star light the carbon in our apple pies. Realm of the galaxies, Cambrian explosion Flatland for tesseract hundreds of thousands, cosmic ocean. Prime number cosmic ocean for blue resort white dwarf finite but unbounded
+                                        <ol>
+                                            <li> We Ship you a mini in-office studio </li>
+                                            <li> You Shoot & Upload to our cloud </li>
+                                            <li> We Edit </li>
+
+                                        </ol>
+                                        Magically, publish-ready videos are delivered to your inbox.
                                     </p>
                                 </div>
                                 <div class="one_half last">
@@ -593,7 +680,77 @@
                     </div>
                 </div>
             </div>
+<div id="pricing" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <img src="https://f117.s3-us-west-2.amazonaws.com/assets/images/left_obj_05.png" alt="">
+                        </div>
 
+                        <div class="section-title-holder float-left" data-background="#F1576B">
+                            <div class="section-num">
+                                <span class="current-section-num">
+                                    07
+                                </span>
+                                <span class="total-section-num">
+                                    / 09
+                                </span>
+                            </div>
+                            <h2 class="entry-title">
+                                Pricing
+                            </h2>
+                            <p class="page-desc">
+                                The best way to spend your budget this month.
+                            </p>
+                        </div>
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div class="pricing-plan-list">
+  <div class="pricing-plan">
+    <h2 class="pricing-plan__name">Starter</h2>
+    <h1 class="pricing-plan__price">$599</h1>
+    <small class="pricing-plan__disclosure">charged on a monthly basis. <br> Up to:</small>
+    <ul class="pricing-plan__feature-list">
+      <li class="pricing-plan__feature">Basic in-office studio</li>
+      <li class="pricing-plan__feature">Two 2-minute videos/ <b>month</b></li>
+      <li class="pricing-plan__feature">Four Social Stories/ <b>month</b></li>
+      <li class="pricing-plan__feature">1-Visual Identity</li>
+      <li class="pricing-plan__feature">*limited Revisions</li>
+      <li> <a href="#footer" class="button" style="padding:4px; background-color: #30c85f">&nbsp;&nbsp;&nbsp;&nbsp;Start Now!&nbsp;&nbsp;&nbsp;&nbsp;</a> </li>
+    </ul>
+  </div>
+  <div class="pricing-plan pricing-plan--featured">
+    <h2 class="pricing-plan__name">Producer</h2>
+    <h1 class="pricing-plan__price">$1,299</h1>
+    <small class="pricing-plan__disclosure">charged on a monthly basis. <br>Up to:</small>
+    <ul class="pricing-plan__feature-list">
+      <li class="pricing-plan__feature">Upgraded in-office studio</li>
+      <li class="pricing-plan__feature">One 2-minute videos a <b>week</b></li>
+      <li class="pricing-plan__feature">Two (2) Social Stories a <b>week</b></li>
+      <li class="pricing-plan__feature">2-Visual Identities</li>
+      <li class="pricing-plan__feature">*limited Revisions</li>
+      <li> <a href="#footer" class="button" style="padding:4px; background-color: #3a7bd5">&nbsp;&nbsp;&nbsp;&nbsp;Start Now!&nbsp;&nbsp;&nbsp;&nbsp;</a> </li>
+    </ul>
+  </div>
+  <div class="pricing-plan">
+    <h2 class="pricing-plan__name">Publisher</h2>
+    <h1 class="pricing-plan__price">$2,499</h1>
+    <small class="pricing-plan__disclosure">charged on a monthly basis <br> Up to:</small>
+    <ul class="pricing-plan__feature-list">
+      <li class="pricing-plan__feature">Premium in-office studio</li>
+      <li class="pricing-plan__feature">Two (2) 2-minute videos per <b>week</b></li>
+      <li class="pricing-plan__feature">5 (5) Social Stories per <b>week</b></li>
+      <li class="pricing-plan__feature">2-Visual Identities</li>
+      <li class="pricing-plan__feature">Unlimited Revisions</li>
+      <li> <a href="#footer" class="button" style="padding:4px; background-color: #9014e8">&nbsp;&nbsp;&nbsp;&nbsp;Start Now!&nbsp;&nbsp;&nbsp;&nbsp;</a> </li>
+    </ul>
+  </div>
+</div>
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
 
 
             <!--Footer-->
